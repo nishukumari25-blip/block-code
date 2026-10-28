@@ -651,4 +651,38 @@ function bindInteractions() {
   });
 }
 
+window.addEventListener("click", (event) => {
+  const link = event.target.closest("a");
+  if (!link) return;
+
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  if (
+    link.target === "_blank" ||
+    link.origin !== window.location.origin ||
+    href.startsWith("mailto:") ||
+    href.startsWith("tel:")
+  ) {
+    return;
+  }
+
+  if (href.startsWith("#")) {
+    return;
+  }
+
+  event.preventDefault();
+  const targetUrl = new URL(link.href, window.location.origin);
+  if (window.location.pathname !== targetUrl.pathname || window.location.search !== targetUrl.search) {
+    window.history.pushState(null, "", href);
+    render();
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+});
+
+window.addEventListener("popstate", () => {
+  render();
+});
+
 render();
