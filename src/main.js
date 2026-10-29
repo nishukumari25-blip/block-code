@@ -1323,9 +1323,92 @@ function homePage() {
 function aboutPage() {
   return `<main class="inner-page about-page">
     <section class="page-hero">
-      <p class="eyebrow">About BlackCode</p>
-      <h1>We build digital products that drive real business operations.</h1>
-      <p class="hero-copy">BlackCode is a software engineering company focusing on long-term digital growth, high-performance web systems, and custom software tools.</p>
+      <p class="section-kicker">ABOUT BLACKCODE</p>
+      <h1>More Than Code. A Thoughtful Technology Company.</h1>
+      <p>BlackCode was created with a simple belief — software should solve real problems, not create new ones.</p>
+    </section>
+    <section class="story-section section-wrap">
+      <div class="story-copy">
+        <p class="section-kicker">PURPOSEFUL TECHNOLOGY</p>
+        <h2>Our Story</h2>
+        <p>BlackCode started with a simple goal: build meaningful digital systems that make everyday work clearer, easier, and more connected. We approach each challenge with structure and a focus on the people who will use the product.</p>
+        <p>Today, we bring that same care to business software, websites, and custom applications. We value dependable architecture, thoughtful user experiences, and solutions that can grow with the business behind them.</p>
+        <div class="story-tags">
+          <span>Built around real workflows</span>
+          <span>Designed to grow with you</span>
+        </div>
+      </div>
+      <figure>
+        <img src="${ASSETS}about-team-BL3NAJQc.jpg" alt="A collaborative software team working together around a laptop">
+        <figcaption>
+          <span>Good technology starts with understanding people.</span>
+          <span>Thoughtful work. Practical outcomes.</span>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="thinking-section">
+      <div class="section-wrap">
+        <h2>How We Think</h2>
+        <div class="thinking-grid">
+          <article>
+            <h3>Clarity Before Complexity</h3>
+            <p>We believe simple systems outperform complex ones in the long run.</p>
+          </article>
+          <article>
+            <h3>Architecture Matters</h3>
+            <p>A strong foundation ensures performance, security, and scalability.</p>
+          </article>
+          <article>
+            <h3>Business Context First</h3>
+            <p>Technology decisions should support real-world workflows.</p>
+          </article>
+          <article>
+            <h3>Sustainability Over Speed</h3>
+            <p>We value long-term stability over short-term delivery pressure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="about-callout">
+      <h2>Let’s Build Something Great Together</h2>
+      <p>Have an idea for a website, ERP, or SaaS product? Let BlackCode bring it to life.</p>
+      <a class="button button-primary" href="/contact">Start Your Project</a>
+    </section>
+    <section class="culture-section section-wrap">
+      <h2>Our Culture</h2>
+      <p>We operate with a mindset of ownership, accountability, and respect for craftsmanship. Every engineer at BlackCode treats projects as long-term products, not temporary assignments.</p>
+      <p>We encourage continuous learning, thoughtful decision-making, and open communication. Our culture prioritizes calm execution, realistic timelines, and honest feedback — both internally and with clients.</p>
+    </section>
+    <section class="trust-section">
+      <div class="section-wrap">
+        <h2>Building Trust Through Process</h2>
+        <p>Trust is built through consistency. We focus on clear documentation, predictable delivery, and transparent communication throughout every engagement.</p>
+        <p>Our clients value us not only for technical skill, but for our ability to think ahead, anticipate challenges, and design systems that grow gracefully with their business.</p>
+      </div>
+    </section>
+    <section class="partnership-section">
+      <div class="section-wrap">
+        <p class="section-kicker">WORKING WITH BLACKCODE</p>
+        <h2>Good Work Starts With a Clear Partnership</h2>
+        <p>From the first conversation through launch and beyond, we keep the work focused on your goals and the people who rely on your systems.</p>
+        <div class="partnership-grid">
+          <article>
+            <span>01</span>
+            <h3>Understand the need</h3>
+            <p>We begin by learning your workflows, priorities, and what success should look like.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Build with clarity</h3>
+            <p>We shape a practical solution with clear decisions, regular feedback, and careful execution.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Support what comes next</h3>
+            <p>We plan for the next stage too, so your product can adapt as your business changes.</p>
+          </article>
+        </div>
+      </div>
     </section>
   </main>`;
 }
