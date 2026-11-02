@@ -3414,3 +3414,26 @@ p {
     line-height: 1.8;
   }
 }
+/* Fix for Service Banner Image Cropping across all service pages */
+.service-hero-image {
+  width: 100% !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+  overflow: visible !important;
+}
+
+.service-hero-image img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 440px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+.process-image {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 480px !important;
+  object-fit: contain !important;
+}
