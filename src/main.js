@@ -1,8 +1,6 @@
 const ASSETS = "/assets/";
 const LOGO = `${ASSETS}wisdomsoft_logo.png`;
 const WHITE_LOGO = `${ASSETS}wisdomsoft_logo.png`;
-const WHATSAPP_URL =
-  "https://wa.me/918527952043?text=Hello%20Wisdomsoft%2C%20I%20would%20like%20to%20discuss%20my%20project.";
 
 const services = [
   {
@@ -442,19 +440,15 @@ function footer() {
         <a href="/" aria-label="Wisdomsoft home"><img src="${WHITE_LOGO}" alt="Wisdomsoft"></a>
         <p>Wisdomsoft delivers web applications, e-commerce platforms, mobile apps and business software for modern teams.</p>
         <div class="social-links" aria-label="Wisdomsoft social media">
-          <a aria-label="Wisdomsoft on Facebook" href="https://www.facebook.com" target="_blank" rel="noreferrer">f</a>
-          <a aria-label="Wisdomsoft on X" href="https://x.com" target="_blank" rel="noreferrer">𝕏</a>
           <a aria-label="Wisdomsoft on LinkedIn" href="https://www.linkedin.com" target="_blank" rel="noreferrer">in</a>
-          <a aria-label="Wisdomsoft on Instagram" href="https://www.instagram.com" target="_blank" rel="noreferrer">◎</a>
         </div>
       </div>
       <nav class="footer-links" aria-label="Company links"><h4>Company</h4><a href="/">Home</a><a href="/about">About Us</a><a href="/careers">Careers</a><a href="/contact">Contact</a></nav>
       <nav class="footer-links" aria-label="Service links"><h4>Services</h4>${services.slice(0, 5).map((service) => `<a href="${routeFor(service.slug)}">${service.name === "E-commerce & Product Platforms" ? "E-commerce Platforms" : service.name}</a>`).join("")}</nav>
-      <div class="footer-contact"><h4>Contact Us</h4><p>${icon("pin")}<span>A-70 Second Floor, Sector-2 Noida, Gautam Buddha Nagar, U.P. 201301.</span></p><a href="tel:+917965315313">${icon("phone")}<span>+91 79653 15313</span></a><a href="mailto:info@wisdomsoft.in">${icon("mail")}<span>info@wisdomsoft.in</span></a></div>
+      <div class="footer-contact"><h4>Contact Us</h4><p>${icon("pin")}<span>Floor No. 4, Nandanvan Park, Karvenagar, Pune.</span></p><a href="tel:+919370778309">${icon("phone")}<span>+91 9370778309</span></a><a href="mailto:info@wisdomsoft.in">${icon("mail")}<span>info@wisdomsoft.in</span></a></div>
     </div>
     <div class="footer-bottom">© 2026 Wisdomsoft. All rights reserved.</div>
-  </footer>
-  <a class="whatsapp" href="${WHATSAPP_URL}" aria-label="Chat with Wisdomsoft on WhatsApp" target="_blank" rel="noreferrer"><svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.2a12.4 12.4 0 0 0-10.6 18.8L4 28l6.2-1.3A12.4 12.4 0 1 0 16 3.2Zm0 22.2c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.7.8.8-3.6-.3-.5a9.2 9.2 0 1 1 8.9 5Zm5.1-6.9c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-1 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.4.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-1-2.1-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.1 2.9c.2.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.4Z"/></svg><span>Chat with us</span></a>`;
+  </footer>`;
 }
 
 function leadForm(className = "") {
@@ -662,10 +656,10 @@ function aboutPage() {
 function contactPage() {
   return `<main class="inner-page contact-page">
     <section class="contact-hero"><div><p class="section-kicker">LET’S TALK ABOUT YOUR PROJECT</p><h1>Good work starts<br>with a conversation.</h1><p>Tell us what you’re planning. Our team will help you map the right solution, scope, and next steps.</p><div class="contact-points"><span>${icon("check")}Replies within one business day</span><span>${icon("check")}Web, mobile &amp; business software</span></div></div><div class="contact-hero-mark"><span>WS</span><small>CONTACT DETAILS</small><i></i></div></section>
-    <section class="contact-layout section-wrap"><div class="contact-info"><p class="section-kicker">CONTACT DETAILS</p><h2>We’re here to help.</h2><p>Have a project in mind or need a little direction? Reach out and we’ll connect you with the right team.</p><div class="contact-detail"><span class="detail-icon">${icon("pin")}</span><div><small>VISIT OUR OFFICE</small><p>A-70, Second Floor, Sector 2,<br>Noida, Uttar Pradesh 201301</p></div></div><div class="contact-detail"><span class="detail-icon">${icon("phone")}</span><div><small>CALL OUR TEAM</small><a href="tel:+917965315313">+91 79653 15313</a></div></div><div class="contact-detail"><span class="detail-icon">${icon("mail")}</span><div><small>EMAIL US</small><a href="mailto:info@wisdomsoft.in">info@wisdomsoft.in</a></div></div><div class="contact-detail"><span class="detail-icon">${icon("clock")}</span><div><small>OFFICE HOURS</small><p>Mon–Fri, 9:00 AM–6:00 PM<br>Saturday, 10:00 AM–3:00 PM · Sunday closed</p></div></div><div class="connect-links"><span>Connect with us</span><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></div></div>
+    <section class="contact-layout section-wrap"><div class="contact-info"><p class="section-kicker">CONTACT DETAILS</p><h2>We’re here to help.</h2><p>Have a project in mind or need a little direction? Reach out and we’ll connect you with the right team.</p><div class="contact-detail"><span class="detail-icon">${icon("pin")}</span><div><small>VISIT OUR OFFICE</small><p>Floor No. 4, Nandanvan Park,<br>Karvenagar, Pune.</p></div></div><div class="contact-detail"><span class="detail-icon">${icon("phone")}</span><div><small>CALL OUR TEAM</small><a href="tel:+919370778309">+91 9370778309</a></div></div><div class="contact-detail"><span class="detail-icon">${icon("mail")}</span><div><small>EMAIL US</small><a href="mailto:info@wisdomsoft.in">info@wisdomsoft.in</a></div></div><div class="contact-detail"><span class="detail-icon">${icon("clock")}</span><div><small>OFFICE HOURS</small><p>Mon–Fri, 9:00 AM–6:00 PM<br>Saturday – Sunday: Closed</p></div></div><div class="connect-links"><span>Connect with us</span><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
       <div class="contact-form-panel"><p class="section-kicker">PROJECT INQUIRY</p><h2>Tell us what you need</h2><p>Share a few details and we’ll take it from here.</p>${leadForm("contact-lead-form")}<p class="privacy-note">Your details are only used to respond to your inquiry.</p></div></section>
     <section class="faq-section section-wrap"><div><p class="section-kicker">A FEW QUICK ANSWERS</p><h2>Before we connect</h2></div><div class="faq-list">${[["How soon will you get back to me?", "Our team usually responds within one business day."], ["Can you help define the scope?", "Yes. We’ll discuss your goals and recommend a practical approach."], ["Do you support projects after launch?", "We offer ongoing maintenance and support for delivered projects."]].map(([question, answer], index) => `<details ${index === 0 ? "open" : ""}><summary>${question}<span>+</span></summary><p>${answer}</p></details>`).join("")}</div></section>
-    <section class="map-section section-wrap"><div class="map-copy"><p class="section-kicker">FIND US</p><h2>Visit our Noida office</h2><p>A-70, Second Floor, Sector 2,<br>Noida, Uttar Pradesh 201301</p><a href="https://maps.google.com/maps?q=A-70%20Second%20Floor%2C%20Sector%202%2C%20Noida%2C%20Uttar%20Pradesh%20201301" target="_blank" rel="noreferrer">Open in Maps ${icon("arrow")}</a></div><iframe title="Map to Wisdomsoft's Noida office" loading="lazy" src="https://maps.google.com/maps?q=A-70%20Second%20Floor%2C%20Sector%202%2C%20Noida%2C%20Uttar%20Pradesh%20201301&output=embed"></iframe></section>
+    <section class="map-section section-wrap"><div class="map-copy"><p class="section-kicker">FIND US</p><h2>Visit Our Pune Office</h2><p>Floor No. 4, Nandanvan Park,<br>Karvenagar, Pune.</p><a href="https://maps.google.com/maps?q=Floor%20No.%204%2C%20Nandanvan%20Park%2C%20Karvenagar%2C%20Pune" target="_blank" rel="noreferrer">Open in Maps ${icon("arrow")}</a></div><iframe title="Map to Pune office" loading="lazy" src="https://maps.google.com/maps?q=Floor%20No.%204%2C%20Nandanvan%20Park%2C%20Karvenagar%2C%20Pune&output=embed"></iframe></section>
   </main>`;
 }
 
